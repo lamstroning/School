@@ -90,7 +90,8 @@ public class algoritm {
         }
 
         ret = Part.get_part(new int[]{part.position[0], part.position[1] + 1});
-        if (ret != null && !ret.block && !ret.move)
+
+		if (ret != null && !ret.block && !ret.move)
         {
             Part close = Part.get_part(new int[]{part.position[0] + 1, part.position[1]});
             if (close == null || close.block)
